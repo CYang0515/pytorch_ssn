@@ -202,7 +202,7 @@ class Dataset(data.Dataset):
         return len(self.split_list)
 
 class Dataset_T(data.Dataset):
-    def __init__(self, num_spixel, root='/home/yc/ssn_superpixels/data', patch_size=None, dtype='test'):
+    def __init__(self, num_spixel, root='', patch_size=None, dtype='test'):
         self.patch_size = patch_size
         self.num_spixel = num_spixel
         self.out_types = ['img', 'spixel_init', 'feat_spixel_init', 'label', 'problabel']
